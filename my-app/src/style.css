@@ -1,7 +1,7 @@
 .logo {
     width: 200px;
     height: 100px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .header-logo-block {
@@ -26,3 +26,88 @@
 .nav-ul li:hover{
     text-decoration: underline;
 }
+
+.footer-col{
+    border-top: 1px solid black;
+
+}
+
+.footer-block{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer-col:nth-child(n+1){
+    margin-left: 20px;
+}
+
+.footer-links{
+    text-align: left;
+}
+
+.footer-space{
+    height: 3em;
+}
+
+.media-icon{
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}
+
+.media-icon:nth-child(n+1){
+    margin-left: 10px;
+}
+
+.last-line{
+    border-top: 1px solid black;
+    margin-left: 6px;
+    margin-top: 20px;
+}
+
+.last-line .col{
+    margin: 15px;
+}
+
+.last-line .col:first-child{
+    padding-left: 10%;
+    text-align: left;
+}
+
+.last-line .col:last-child{
+    padding-right: 10%;
+    text-align: right;
+}
+
+.cover-video{
+    width: 100vw;
+    height: 110vh;
+}
+
+.text-content{
+    width: 60vw;
+}
+
+.saas-intro-title{
+    text-align: center;
+}
+
+.saas-intro-content{
+    text-align: left;
+}
+
+.saas-intro-col:nth-child(n+1){
+    margin-left: 10px;
+}
+
+.saas-intro-btn{
+    border-radius: 0;
+    border: 0;
+    padding: 15px;
+    background-color: #536ee5;
+}
+
+.saas-intro-space{
+    height: 80px;
+}
+
