@@ -4,6 +4,7 @@ import './style.css'
 function ArgusHeader() {
     return (
         <header>
+            <br></br>
             <div className='d-flex justify-content-between align-items-center'>
                 <div className='header-logo-block'>
                     <img className='logo' src={logo} alt="argus logo" />
@@ -27,6 +28,7 @@ function ArgusHeader() {
                 </nav>
 
             </div>
+            <br></br>
         </header>
     );
 }

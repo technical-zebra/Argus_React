@@ -6,6 +6,7 @@ import "./style.css";
 function ArgusFooter() {
   return (
     <footer className="footer-block">
+      <div className="footer-space"></div>
       <div className="row footer-links">
         <div className="col footer-col">
           <br></br>
@@ -72,6 +73,7 @@ function ArgusFooter() {
         <div className="col">Privacy Policy</div>
         <div className="col">© 2023 Argus All rights reserved</div>
       </div>
+      <div className="footer-space"></div>
     </footer>
   );
 }

@@ -111,3 +111,35 @@
     height: 80px;
 }
 
+.saas-intro-space2{
+    height: 60px;
+}
+
+.home-col{
+    width: 100vw;
+}
+
+.get-start-block{
+    height: 80vh;
+    width: 100vw;
+    background-color: #333333;
+    color: white;
+}
+
+.get-start-block .col-6 .image{
+    object-fit: cover;
+    height: 80vh;
+}
+
+.get-start-block .col-6 .button{
+    border: 2px solid white;
+    width:fit-content;
+    padding: 15px 25px;
+    border-radius: 0px;
+    
+}
+
+.get-start-block .row .no1{
+    padding: 0px 100px;
+    text-align: left;
+}
