@@ -1,17 +1,22 @@
-import './App.css';
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import ArgusHeader from './header'
-import ArgusFooter from './footer'
-import Homepage from './home'
+import ArgusHeader from "./header";
+import ArgusFooter from "./footer";
+import Homepage from "./home";
+import Models from "./models";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <ArgusHeader />
-      <Homepage />
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/models" element={<Models />} />
+      </Routes>
       <ArgusFooter />
-    </div>
+    </Router>
   );
 }
 

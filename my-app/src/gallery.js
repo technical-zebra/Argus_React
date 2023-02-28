@@ -11,7 +11,6 @@ function Gallery({ title, images }) {
 
   function showImage(n) {
 
-    console.log("showImage: "+n)
     const slides = document.getElementsByClassName("slides");
     const dots = document.getElementsByClassName("dots");
     let i;
@@ -50,12 +49,10 @@ function Gallery({ title, images }) {
   function plusIndex(n) {
     setIndexWithinBoundary(slideIndex + n)
     showImage(slideIndex)
-    console.log(slideIndex)
   }
 
   function currentSlide(n) {
     setIndexWithinBoundary(n)
-    console.log(slideIndex)
     showImage(slideIndex)
   }
 
