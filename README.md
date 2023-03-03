@@ -1,2 +1,2 @@
 # Argus_React
-Reimplement the Argus website using react
+Reimplement the Argus website using React.js
