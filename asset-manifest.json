@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/argus_react/static/css/main.bcb27e13.css",
-    "main.js": "/argus_react/static/js/main.058e6070.js",
+    "main.css": "/argus_react/static/css/main.8a1b5a00.css",
+    "main.js": "/argus_react/static/js/main.adfb3687.js",
     "static/js/787.28cb0dcd.chunk.js": "/argus_react/static/js/787.28cb0dcd.chunk.js",
     "static/media/home4.png": "/argus_react/static/media/home4.73cb235fdf34a4915656.png",
     "static/media/Character4.png": "/argus_react/static/media/Character4.927f4eda29212a489246.png",
@@ -38,12 +38,12 @@
     "static/media/logo.png": "/argus_react/static/media/logo.b1731f2d1a1117ce8dc1.png",
     "static/media/Character1.jpg": "/argus_react/static/media/Character1.0ce519ce7c8b7483dca5.jpg",
     "index.html": "/argus_react/index.html",
-    "main.bcb27e13.css.map": "/argus_react/static/css/main.bcb27e13.css.map",
-    "main.058e6070.js.map": "/argus_react/static/js/main.058e6070.js.map",
+    "main.8a1b5a00.css.map": "/argus_react/static/css/main.8a1b5a00.css.map",
+    "main.adfb3687.js.map": "/argus_react/static/js/main.adfb3687.js.map",
     "787.28cb0dcd.chunk.js.map": "/argus_react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcb27e13.css",
-    "static/js/main.058e6070.js"
+    "static/css/main.8a1b5a00.css",
+    "static/js/main.adfb3687.js"
   ]
 }
