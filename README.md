@@ -1,4 +1,4 @@
-# Argus_React
+# argus-react
 Reimplement the Argus website using React.js
 
 ## Live Preview
