@@ -2,6 +2,7 @@ import Instagram from "./Images/instagram.png";
 import Twitter from "./Images/twitter.png";
 import Youtube from "./Images/youtube.png";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function ArgusFooter() {
   return (
@@ -11,9 +12,9 @@ function ArgusFooter() {
         <div className="col footer-col">
           <br></br>
           <b>
-            <a>
-              <span>Model</span>
-            </a>
+            <Link to="/models">
+              <span className="footer-link">Model</span>
+            </Link>
           </b>
           <div className="footer-space"></div>
           <p>Characters</p>
@@ -24,9 +25,9 @@ function ArgusFooter() {
         <div className="col footer-col">
           <br></br>
           <b>
-            <a>
-              <span>Modelling as a Service</span>
-            </a>
+            <Link to="/maas">
+              <span className="footer-link">Modelling as a Service</span>
+            </Link>
           </b>
           <div className="footer-space"></div>
           <p>What is MaaS?</p>
@@ -36,9 +37,9 @@ function ArgusFooter() {
         <div className="col footer-col">
           <br></br>
           <b>
-            <a>
-              <span>Company</span>
-            </a>
+            <Link to="/company">
+              <span className="footer-link">Company</span>
+            </Link>
           </b>
           <div className="footer-space"></div>
           <p>Who are we?</p>
@@ -48,29 +49,39 @@ function ArgusFooter() {
       </div>
       <div className="d-flex flex-row">
         <div>
-          <img
-            className="media-icon"
-            src={Instagram}
-            alt="icon link to Instagram"
-          />
+          <Link to="https://www.instagram.com/">
+            <img
+              className="media-icon"
+              src={Instagram}
+              alt="icon link to Instagram"
+            />
+          </Link>
         </div>
         <div>
-          <img
-            className="media-icon"
-            src={Youtube}
-            alt="icon link to Youtube"
-          />
+          <Link to="https://www.youtube.com/">
+            <img
+              className="media-icon"
+              src={Youtube}
+              alt="icon link to Youtube"
+            />
+          </Link>
         </div>
         <div>
-          <img
-            className="media-icon"
-            src={Twitter}
-            alt="icon link to Twitter"
-          />
+          <Link to="https://twitter.com/?lang=en">
+            <img
+              className="media-icon"
+              src={Twitter}
+              alt="icon link to Twitter"
+            />
+          </Link>
         </div>
       </div>
       <div className="row last-line">
-        <div className="col">Privacy Policy</div>
+        <div className="col">
+          <Link to="/privacy_policy">
+            <span className="footer-link">Privacy Policy</span>
+          </Link>
+        </div>
         <div className="col">© 2023 Argus All rights reserved</div>
       </div>
       <div className="footer-space"></div>

@@ -23,7 +23,16 @@
     align-items: center;
 }
 
-.nav-ul li:hover{
+.header-nav-block a, .footer-block a {
+    text-decoration: none;
+  }
+
+.header-link, .footer-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.header-link:hover, .footer-link:hover{
     text-decoration: underline;
 }
 

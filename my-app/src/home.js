@@ -80,7 +80,7 @@ function GetStart() {
           </button>
         </div>
         <div class="col-6 d-flex justify-content-center h-100 flex-column no2">
-          <img className="image" src={homeDrone}></img>
+          <img className="image" src={homeDrone} alt="A man flying a drone"></img>
         </div>
       </div>
     </div>

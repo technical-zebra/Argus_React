@@ -15,7 +15,12 @@
   height: 100vh;
   margin: auto;
   position: relative;
-  background-color: black;
+  background-color: #000000;
+}
+
+.gallery-title{
+  width: 90vw;
+  margin: auto;
 }
 
 .slider-container .fade {
