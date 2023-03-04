@@ -1,6 +1,6 @@
 {
-  "homepage": "https://technical-zebra.github.io/argus-react",
-  "name": "argus",
+  "homepage": "https://technical-zebra.github.io/argus_react",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
