@@ -1,10 +1,10 @@
-import "./style.css";
-import Gallery from "./gallery";
-import home1 from "./Images/home1.jpg";
-import home2 from "./Images/home2.jpg";
-import home3 from "./Images/home3.png";
-import home4 from "./Images/home4.png";
-import homeDrone from "./Images/home_drone.jpg";
+import "./home.css";
+import Gallery from "../components/gallery";
+import home1 from "../Images/home1.jpg";
+import home2 from "../Images/home2.jpg";
+import home3 from "../Images/home3.png";
+import home4 from "../Images/home4.png";
+import homeDrone from "../Images/home_drone.jpg";
 
 function VideoIframe() {
   return (
@@ -71,15 +71,15 @@ function MaaSIntro() {
 function GetStart() {
   return (
     <div className="get-start-block">
-      <div class="row h-100">
-        <div class="col-6 d-flex justify-content-center h-100 flex-column no1">
+      <div className="row h-100">
+        <div className="col-6 d-flex justify-content-center h-100 flex-column no1">
           <h2>Bring Realistic and detailed model to your business</h2>
           <br></br>
           <button className="btn btn-outline-light button" type="button">
             Get started -&gt;
           </button>
         </div>
-        <div class="col-6 d-flex justify-content-center h-100 flex-column no2">
+        <div className="col-6 d-flex justify-content-center h-100 flex-column no2">
           <img className="image" src={homeDrone} alt="A man flying a drone"></img>
         </div>
       </div>

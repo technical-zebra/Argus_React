@@ -1,6 +1,6 @@
-import Instagram from "./Images/instagram.png";
-import Twitter from "./Images/twitter.png";
-import Youtube from "./Images/youtube.png";
+import Instagram from "../Images/instagram.png";
+import Twitter from "../Images/twitter.png";
+import Youtube from "../Images/youtube.png";
 import "./style.css";
 import { Link } from "react-router-dom";
 
