@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/argus-react/static/css/main.8a1b5a00.css",
-    "main.js": "/argus-react/static/js/main.bf671383.js",
+    "main.css": "/argus-react/static/css/main.ad081161.css",
+    "main.js": "/argus-react/static/js/main.a2dcb2a7.js",
     "static/js/787.28cb0dcd.chunk.js": "/argus-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/home4.png": "/argus-react/static/media/home4.73cb235fdf34a4915656.png",
+    "static/media/discount.jpg": "/argus-react/static/media/discount.c2bd7a37d045db4aff88.jpg",
     "static/media/Character4.png": "/argus-react/static/media/Character4.927f4eda29212a489246.png",
+    "static/media/flying drone.jpg": "/argus-react/static/media/flying drone.6e324facc8a005ba7762.jpg",
     "static/media/home3.png": "/argus-react/static/media/home3.f7dcca85b3f773793fd0.png",
     "static/media/Architecture1.png": "/argus-react/static/media/Architecture1.434db2d1a92ddab27dd5.png",
     "static/media/Environment9.png": "/argus-react/static/media/Environment9.be5747ef3e6ec24ad2da.png",
+    "static/media/company_drone.jpg": "/argus-react/static/media/company_drone.a5cbf0b9c1ec40c7519d.jpg",
     "static/media/home_drone.jpg": "/argus-react/static/media/home_drone.86f2374f079d50b3b71c.jpg",
     "static/media/Environment8.png": "/argus-react/static/media/Environment8.6289a27e38058dd7713f.png",
     "static/media/Environment1.jpg": "/argus-react/static/media/Environment1.2254f1bd3ceff041ca7f.jpg",
+    "static/media/drone on hand.jpg": "/argus-react/static/media/drone on hand.3326cbaf65b7b36f6273.jpg",
     "static/media/Environment6.jpg": "/argus-react/static/media/Environment6.6bdda0bb4d6328b88ba6.jpg",
     "static/media/Environment7.jpg": "/argus-react/static/media/Environment7.2441675bdacad63b431e.jpg",
     "static/media/Environment4.jpg": "/argus-react/static/media/Environment4.e382e62eeface7c1c835.jpg",
     "static/media/Architecture2.png": "/argus-react/static/media/Architecture2.e9b75f94bc3d967a4f74.png",
     "static/media/Environment5.jpg": "/argus-react/static/media/Environment5.69e89ed7b741585dc942.jpg",
+    "static/media/company_cover.jpg": "/argus-react/static/media/company_cover.790510287bafd8131828.jpg",
     "static/media/Environment2.jpg": "/argus-react/static/media/Environment2.a5025974b2ed6dc6774e.jpg",
     "static/media/Architecture8.jpg": "/argus-react/static/media/Architecture8.46549a03aa7bd8c0ba58.jpg",
     "static/media/Architecture7.jpg": "/argus-react/static/media/Architecture7.551ac5c7173d9000e4a6.jpg",
@@ -37,13 +42,18 @@
     "static/media/home2.jpg": "/argus-react/static/media/home2.2fb0bcbcc585efd9c9de.jpg",
     "static/media/logo.png": "/argus-react/static/media/logo.b1731f2d1a1117ce8dc1.png",
     "static/media/Character1.jpg": "/argus-react/static/media/Character1.0ce519ce7c8b7483dca5.jpg",
+    "static/media/member3.png": "/argus-react/static/media/member3.140e7475e3cc30699815.png",
+    "static/media/comparsion.png": "/argus-react/static/media/comparsion.deec231cabecbe649fdd.png",
+    "static/media/member2.png": "/argus-react/static/media/member2.c276c3b174c7e1d1221b.png",
+    "static/media/member1.png": "/argus-react/static/media/member1.7aec2e4ca822863df527.png",
+    "static/media/member4.png": "/argus-react/static/media/member4.f092318bcbb3d285733f.png",
     "index.html": "/argus-react/index.html",
-    "main.8a1b5a00.css.map": "/argus-react/static/css/main.8a1b5a00.css.map",
-    "main.bf671383.js.map": "/argus-react/static/js/main.bf671383.js.map",
+    "main.ad081161.css.map": "/argus-react/static/css/main.ad081161.css.map",
+    "main.a2dcb2a7.js.map": "/argus-react/static/js/main.a2dcb2a7.js.map",
     "787.28cb0dcd.chunk.js.map": "/argus-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a1b5a00.css",
-    "static/js/main.bf671383.js"
+    "static/css/main.ad081161.css",
+    "static/js/main.a2dcb2a7.js"
   ]
 }
