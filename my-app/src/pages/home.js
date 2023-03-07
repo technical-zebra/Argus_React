@@ -5,6 +5,7 @@ import home2 from "../Images/home2.jpg";
 import home3 from "../Images/home3.png";
 import home4 from "../Images/home4.png";
 import homeDrone from "../Images/home_drone.jpg";
+import { useNavigate } from 'react-router-dom';
 
 /**
  * It returns an iframe element with a className, src, title, frameBorder, allow, and allowFullScreen
@@ -28,6 +29,8 @@ function VideoIframe() {
  * @returns A div with a class of text-content saas-intro.
  */
 function MaaSIntro() {
+  const navigate = useNavigate();
+
   return (
     <div className="text-content saas-intro">
       <div>
@@ -68,7 +71,7 @@ function MaaSIntro() {
         </div>
         <div className="saas-intro-title">
           <br></br>
-          <button className="btn btn-primary saas-intro-btn" type="button">
+          <button className="btn btn-primary saas-intro-btn" type="button" onClick={() => navigate("/maas")}>
             <b>Explore Modelling as a Service</b>
           </button>
           <div className="saas-intro-space"></div>
@@ -86,13 +89,15 @@ function MaaSIntro() {
  * @returns A div with a class of get-start-block.
  */
 function GetStart() {
+  const navigate = useNavigate();
+
   return (
     <div className="get-start-block">
       <div className="row h-100">
         <div className="col-6 d-flex justify-content-center h-100 flex-column no1">
           <h2>Bring Realistic and detailed model to your business</h2>
           <br></br>
-          <button className="btn btn-outline-light button" type="button">
+          <button className="btn btn-outline-light button" type="button" onClick={() => navigate("/contact")}>
             Get started -&gt;
           </button>
         </div>

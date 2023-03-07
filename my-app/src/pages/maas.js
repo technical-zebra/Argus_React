@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "./maas.css";
 import coverImage from "../Images/flying drone.jpg";
 import comparsion from "../Images/comparsion.png";
@@ -80,6 +81,8 @@ function Testimonial() {
 }
 
 function GetStart() {
+  const navigate = useNavigate();
+
   return (
     <div className="get-start-block">
       <div className="row h-100">
@@ -88,7 +91,7 @@ function GetStart() {
           <br></br>
           <p>Contact our team to see how we can help with intelligent automation at your facility.</p>
           <br></br>
-          <button className="btn btn-outline-light button" type="button">
+          <button className="btn btn-outline-light button" type="button" onClick={() => navigate("/contact")}>
             <h3>Get started -&gt;</h3>
           </button>
         </div>

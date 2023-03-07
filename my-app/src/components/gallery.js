@@ -104,10 +104,11 @@ function Gallery({ title, images, bgcolor }) {
 
   return (
     <div className="gallery-container" style={containerStyle}>
-      <div className="gallery-space"></div>
+      <div style={{ height: "30px" }}></div>
       <div className="gallery-title">
         <h3>{title}</h3>
       </div>
+      <div style={{ height: "30px" }}></div>
       <div className="slider-container">
         {images.map((item, index) => (
           <div className="slides fade" key={index} ref={el => slidesRef.current[index] = el}>
@@ -137,11 +138,12 @@ function Gallery({ title, images, bgcolor }) {
               className="dots"
               onClick={() => currentSlide(index)}
               ref={el => dotsRef.current[index] = el}
+              key={"dot-"+index}
             ></span>
           ))}
         </div>
       </div>
-      <div className="gallery-space"></div>
+      <div style={{ height: "30px" }}></div>
     </div>
   );
 }

@@ -6,11 +6,12 @@ import member3 from "../Images/member3.png";
 import member4 from "../Images/member4.png";
 import coverImage from "../Images/company_cover.jpg";
 import "./company.css";
+import { useNavigate } from 'react-router-dom';
 
 /**
- * It returns a div with a background image, a mask, and a WhoAreWe component
+ * Generate a cover image block that contain a images and a customized text block
  * @param props - {
- * @returns A div with a class of cover-image-container.
+ * @returns A div with a className of cover-image-container.
  */
 function CoverImage(props) {
   return (
@@ -23,7 +24,7 @@ function CoverImage(props) {
 }
 
 /**
- * It returns a div with a background image and some text
+ * Generate who are we block
  * @returns A div with a className of "WhoAreWe-bgcolor d-flex justify-content-center
  * cover-image-title"
  */
@@ -76,18 +77,18 @@ function OurTeam() {
       <div className="box">
         <div className="box-in-box" style={{ width: "70%" }}>
           {members.names.map((item, index) => (
-            <div className="d-flex justify-content-center flex-column">
+            <div className="d-flex justify-content-center flex-column" key={item}>
               <div className="row member">
-                <div class="col-md-auto img-block">
+                <div className="col-md-auto img-block">
                   <img
-                    class="member-img"
+                    className="member-img"
                     src={members.images[index]}
                     alt="image of the member"
                   ></img>
                 </div>
-                <div class="col-md-9">
+                <div className="col-md-9">
                   <br></br>
-                  <h3 class="member-name">{item}</h3>
+                  <h3 className="member-name">{item}</h3>
                   <br></br>
                   <p>{members.roles[index]}</p>
                   <br></br>
@@ -139,13 +140,15 @@ function News() {
 }
 
 function ContactUs() {
+  const navigate = useNavigate();
+
   return (
     <div className="contact-us-block">
       <div className="row h-100">
         <div className="col-6 d-flex justify-content-center h-100 flex-column no1">
           <h2>Enable a new era of your business</h2>
           <br></br>
-          <button className="btn btn-outline-light button" type="button">
+          <button className="btn btn-outline-light button" type="button" onClick={() => navigate("/contact")}>
             Contact us -&gt;
           </button>
         </div>
