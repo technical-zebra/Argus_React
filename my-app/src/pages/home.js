@@ -23,10 +23,12 @@ function MaaSIntro() {
   return (
     <div className="text-content saas-intro">
       <div>
-      <div className="saas-intro-space2"></div>
+        <div className="saas-intro-space2"></div>
         <div className="saas-intro-title">
           <br></br>
-          <h1><b>Start your intelligent modelling now!</b></h1>
+          <h1>
+            <b>Start your intelligent modelling now!</b>
+          </h1>
           <br></br>
         </div>
         <div className="saas-intro-space2"></div>
@@ -59,7 +61,7 @@ function MaaSIntro() {
         <div className="saas-intro-title">
           <br></br>
           <button className="btn btn-primary saas-intro-btn" type="button">
-            Explore Modelling as a Service
+            <b>Explore Modelling as a Service</b>
           </button>
           <div className="saas-intro-space"></div>
         </div>
@@ -80,7 +82,11 @@ function GetStart() {
           </button>
         </div>
         <div className="col-6 d-flex justify-content-center h-100 flex-column no2">
-          <img className="image" src={homeDrone} alt="A man flying a drone"></img>
+          <img
+            className="image"
+            src={homeDrone}
+            alt="A man flying a drone"
+          ></img>
         </div>
       </div>
     </div>

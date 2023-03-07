@@ -5,7 +5,8 @@
 }
 
 .text-content{
-    width: 60vw;
+    width: 50vw;
+    font-size: 1.125rem;
 }
 
 .saas-intro-title{
@@ -16,6 +17,10 @@
     text-align: left;
 }
 
+.saas-intro-col h3{
+    font-size: 2rem;
+}
+
 .saas-intro-col:nth-child(n+1){
     margin-left: 10px;
 }
@@ -23,8 +28,9 @@
 .saas-intro-btn{
     border-radius: 0;
     border: 0;
-    padding: 15px;
+    padding: 20px 30px;
     background-color: #536ee5;
+    font-size: 1.2rem;
 }
 
 .saas-intro-space{

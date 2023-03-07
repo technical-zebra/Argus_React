@@ -3,11 +3,27 @@ import Twitter from "../Images/twitter.png";
 import Youtube from "../Images/youtube.png";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function ArgusFooter() {
+  const navigate = useNavigate();
+
+  function goToModel(history) {
+    history.push("/models");
+  }
+  
+  function goToMaaS(history) {
+    history.push("/maas");
+  }
+  
+  function goToCompany(history) {
+    history.push("/company");
+  }
+  
+
   return (
     <footer className="footer-block">
-      <div className="footer-space"></div>
+      <div style={{ height: "3em" }}></div>
       <div className="row footer-links">
         <div className="col footer-col">
           <br></br>
@@ -16,11 +32,15 @@ function ArgusFooter() {
               <span className="footer-link">Model</span>
             </Link>
           </b>
-          <div className="footer-space"></div>
-          <p>Characters</p>
-          <p>Items</p>
-          <p>Environment</p>
-          <p>Architectural Visualization</p>
+          <div style={{ height: "3em" }}></div>
+          <div className="footer-link">
+          <Link to="/models">
+            <p>Characters</p>
+            <p>Items</p>
+            <p>Environment</p>
+            <p>Architectural Visualization</p>
+            </Link>
+          </div>
         </div>
         <div className="col footer-col">
           <br></br>
@@ -29,10 +49,16 @@ function ArgusFooter() {
               <span className="footer-link">Modelling as a Service</span>
             </Link>
           </b>
-          <div className="footer-space"></div>
-          <p>What is MaaS?</p>
-          <p>Testimonials</p>
-          <p>Service & Support</p>
+          <div style={{ height: "3em" }}></div>
+          <div className="footer-link">
+          <Link to="/maas">
+            <p>What is MaaS?</p>
+
+            <p>Testimonials</p>
+
+            <p>Service & Support</p>
+            </Link>
+          </div>
         </div>
         <div className="col footer-col">
           <br></br>
@@ -41,10 +67,16 @@ function ArgusFooter() {
               <span className="footer-link">Company</span>
             </Link>
           </b>
-          <div className="footer-space"></div>
-          <p>Who are we?</p>
-          <p>Our team</p>
-          <p>News</p>
+          <div style={{ height: "3em" }}></div>
+          <div className="footer-link">
+          <Link to="/company">
+            <p>Who are we?</p>
+
+            <p>Our team</p>
+
+            <p>News</p>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="d-flex flex-row">
@@ -84,7 +116,7 @@ function ArgusFooter() {
         </div>
         <div className="col">© 2023 Argus All rights reserved</div>
       </div>
-      <div className="footer-space"></div>
+      <div style={{ height: "3em" }}></div>
     </footer>
   );
 }

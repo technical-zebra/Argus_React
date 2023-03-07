@@ -1,6 +1,6 @@
 .logo {
-    width: 200px;
-    height: 100px;
+    width: 225px;
+    height: 112.5px;
     object-fit: contain;
 }
 
@@ -11,6 +11,7 @@
 .header-nav-block {
     margin-right: 10%;
     padding: 20px 0 0;
+    font-size: 1.375rem;
 }
 
 .nav-ul{
@@ -25,6 +26,7 @@
 
 .header-nav-block a, .footer-block a {
     text-decoration: none;
+    color: #000;
   }
 
 .header-link, .footer-link{
@@ -44,6 +46,7 @@
 .footer-block{
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 1.375rem;
 }
 
 .footer-col:nth-child(n+1){
@@ -56,6 +59,10 @@
 
 .footer-space{
     height: 3em;
+}
+
+.footer-block b{
+    font-weight: 600;
 }
 
 .media-icon{

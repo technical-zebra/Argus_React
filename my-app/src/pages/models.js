@@ -32,7 +32,7 @@ function Models() {
   return (
     <div>
       <div className="row justify-content-center">
-        <div className="d-flex justify-content-center home-col">
+        <div className="d-flex justify-content-center home-col" id="Characters">
           <Gallery
             title="Characters"
             images={[character1, character2, character3, character4, character5]}
@@ -41,7 +41,7 @@ function Models() {
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="d-flex justify-content-center home-col">
+        <div className="d-flex justify-content-center home-col" id="Items">
           <Gallery
             title="Items"
             images={[item1, item2, item3, item4, item5]}
@@ -50,7 +50,7 @@ function Models() {
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="d-flex justify-content-center home-col">
+        <div className="d-flex justify-content-center home-col" id="Environment">
           <Gallery
             title="Environment"
             images={[environment1, environment2, environment3, environment4, environment5, environment6, environment7, environment8, environment9, environment10]}
@@ -59,7 +59,7 @@ function Models() {
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="d-flex justify-content-center home-col">
+        <div className="d-flex justify-content-center home-col" id="ArchitecturalVisualization">
           <Gallery
             title="Architectural Visualization"
             images={[architecture1, architecture2, architecture3, architecture4, architecture5, architecture6, architecture7, architecture8]}
