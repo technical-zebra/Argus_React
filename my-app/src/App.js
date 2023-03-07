@@ -13,6 +13,12 @@ import NotFound from "./pages/not_found";
 import "./App.css";
 
 
+/**
+ * The App function returns the Router component, which contains the ArgusHeader, Routes, and
+ * ArgusFooter components. The Routes component contains the Route components, which are the pages of
+ * the website.
+ * @returns The Router component is being returned.
+ */
 function App() {
   return (
     <Router>

@@ -2,6 +2,11 @@ import logo from "../Images/logo.png";
 import "./style.css";
 import { Link } from "react-router-dom";
 
+/**
+ * The function returns a header component that contains a logo, and a navigation bar with links to
+ * other pages.
+ * @returns A header with a logo and a nav bar.
+ */
 function ArgusHeader() {
   return (
     <header>

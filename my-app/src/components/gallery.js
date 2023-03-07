@@ -1,16 +1,35 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./gallery.css";
 
+/**
+ * The Gallery function takes three parameters: title, images, and bgcolor. It returns a div with the
+ * class name gallery-container, which contains a div with the class name gallery-space, a div with the
+ * class name gallery-title, a div with the class name slider-container, and another div with the class
+ * name gallery-space. The gallery-title div contains an h3 tag with the title of the gallery. The
+ * slider-container div contains a div with the class name slides, which contains a div with the class
+ * name slider-numbers, a div with the class name slider-image, and an img tag with the class name
+ * image-file. The slider-numbers div contains the number of the image and the total number of images.
+ * The slider-image div contains the image. The gallery-container div also contains a div with the
+ * class name prev, a div with the class name next, and a div with the class name
+ * @returns The Gallery component is being returned.
+ */
 function Gallery({ title, images, bgcolor }) {
   const [slideIndex, setSlideIndex] = useState(0);
   const [slideLength, setSlideLength] = useState(0);
   const slidesRef = useRef([]);
   const dotsRef = useRef([]);
 
+  /* Setting the background color of the gallery container. */
   const containerStyle = {
     backgroundColor: bgcolor || '#e4e4e4'
   };
 
+  /**
+   * The showImage function is called when the user clicks on a dot. It hides all the slides, shows the
+   * slide that corresponds to the dot that was clicked, and adds the active class to the dot that was
+   * clicked.
+   * @param n - the index of the slide to show
+   */
   function showImage(n) {
     const slides = slidesRef.current;
     const dots = dotsRef.current;
@@ -34,6 +53,11 @@ function Gallery({ title, images, bgcolor }) {
     slides[n].style.opacity = 1;
   }
 
+  /**
+   * If the index is greater than the length of the slides, return 0. If the index is less than 0,
+   * return 3. Otherwise, return the index.
+   * @param index - the index of the slide to be displayed
+   */
   function setIndexWithinBoundary(index) {
     setSlideIndex(() => {
       if (index > slideLength) {
@@ -46,16 +70,34 @@ function Gallery({ title, images, bgcolor }) {
     });
   }
 
+  /**
+   * The function plusIndex() takes a parameter n, which is a number. It then calls the function
+   * setIndexWithinBoundary() with the parameter slideIndex + n. It then calls the function showImage()
+   * with the parameter slideIndex
+   * @param n - the number of slides to move forward or backward
+   */
   function plusIndex(n) {
     setIndexWithinBoundary(slideIndex + n)
     showImage(slideIndex)
   }
 
+  /**
+   * It sets the slideIndex to the value of n, if n is within the boundary of the number of slides. 
+   * 
+   * If n is not within the boundary, it sets the slideIndex to the first or last slide, depending on
+   * whether n is less than 1 or greater than the number of slides. 
+   * 
+   * Then it calls the showImage function, passing it the slideIndex. 
+   * 
+   * The showImage function will display the image at the index of the slideIndex.
+   * @param n - the index of the image to show
+   */
   function currentSlide(n) {
     setIndexWithinBoundary(n)
     showImage(slideIndex)
   }
 
+  /* Calling the showImage function, passing it the slideIndex. */
   useEffect(() => {
     showImage(slideIndex);
   }, [slideIndex]);

@@ -7,6 +7,11 @@ import member4 from "../Images/member4.png";
 import coverImage from "../Images/company_cover.jpg";
 import "./company.css";
 
+/**
+ * It returns a div with a background image, a mask, and a WhoAreWe component
+ * @param props - {
+ * @returns A div with a class of cover-image-container.
+ */
 function CoverImage(props) {
   return (
     <div className="cover-image-container">
@@ -17,6 +22,11 @@ function CoverImage(props) {
   );
 }
 
+/**
+ * It returns a div with a background image and some text
+ * @returns A div with a className of "WhoAreWe-bgcolor d-flex justify-content-center
+ * cover-image-title"
+ */
 function WhoAreWe() {
   return (
     <div className="WhoAreWe-bgcolor d-flex justify-content-center cover-image-title">
@@ -37,6 +47,10 @@ function WhoAreWe() {
   );
 }
 
+/**
+ * Generate Our team block
+ * @returns A React component.
+ */
 function OurTeam() {
   const members = {
     names: ["Meng Lai", "Alex Smith", "Jeanette Keng", "Tom Feng"],
@@ -90,6 +104,10 @@ function OurTeam() {
   );
 }
 
+/**
+ * Generate News block
+ * @returns A React component.
+ */
 function News() {
   return (
     <div className="news row">

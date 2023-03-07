@@ -6,6 +6,10 @@ import home3 from "../Images/home3.png";
 import home4 from "../Images/home4.png";
 import homeDrone from "../Images/home_drone.jpg";
 
+/**
+ * It returns an iframe element with a className, src, title, frameBorder, allow, and allowFullScreen
+ * @returns A React component that renders an iframe.
+ */
 function VideoIframe() {
   return (
     <iframe
@@ -19,6 +23,10 @@ function VideoIframe() {
   );
 }
 
+/**
+ * It returns a div with a bunch of other divs and other elements inside it
+ * @returns A div with a class of text-content saas-intro.
+ */
 function MaaSIntro() {
   return (
     <div className="text-content saas-intro">
@@ -70,6 +78,13 @@ function MaaSIntro() {
   );
 }
 
+/**
+ * GetStart() is a function that returns a div with a class of get-start-block, which contains a div
+ * with a class of row h-100, which contains two divs, one with a class of col-6 d-flex
+ * justify-content-center h-100 flex-column no1, which contains an h2 and a button, and the other with
+ * a class of col-6 d-flex justify-content-center h-100 flex-column no2, which contains an image.
+ * @returns A div with a class of get-start-block.
+ */
 function GetStart() {
   return (
     <div className="get-start-block">
@@ -93,6 +108,10 @@ function GetStart() {
   );
 }
 
+/**
+  Generate Homepage from react functional components
+ * @returns A div contain all components format layout using bootstrap.
+ */
 function Homepage() {
   return (
     <div>

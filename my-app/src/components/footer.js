@@ -5,22 +5,11 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
+/**
+ * It's a footer that has 3 columns, each with a title and a list of links.
+ * @returns A footer with a bunch of links and icons.
+ */
 function ArgusFooter() {
-  const navigate = useNavigate();
-
-  function goToModel(history) {
-    history.push("/models");
-  }
-  
-  function goToMaaS(history) {
-    history.push("/maas");
-  }
-  
-  function goToCompany(history) {
-    history.push("/company");
-  }
-  
-
   return (
     <footer className="footer-block">
       <div style={{ height: "3em" }}></div>
