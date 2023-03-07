@@ -9,17 +9,17 @@ Reimplement the Argus website using React.js
 
 
 ### Home
-![screenshot 1](/Screenshot/Home.png)
+![screenshot 1](../Screenshot/Home.png)
 
 
 ### MaaS
-![screenshot 2](/Screenshot/MaaS.png)
+![screenshot 2](../Screenshot/MaaS.png)
 
 
 ### Model
-![screenshot 3](/Screenshot/Model.png)
+![screenshot 3](../Screenshot/Model.png)
 
 
 ### Company
-![screenshot 4](/Screenshot/Company.png)
+![screenshot 4](../Screenshot/Company.png)
 
