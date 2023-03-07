@@ -1,6 +1,10 @@
 # Argus_React
 Reimplement the Argus website using React.js
 
+
+## About Argus
+Argus is a fictional start up that utilise drone modelling and deep learning technologies.
+
 ## Live Preview
 [https://technical-zebra.github.io/argus-react/](https://technical-zebra.github.io/argus-react/)
 
