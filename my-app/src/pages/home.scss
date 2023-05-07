@@ -1,0 +1,75 @@
+$color-primary: #536ee5;
+$space-1: 80px;
+$space-2: 60px;
+
+.cover-video {
+  width: 100vw;
+  height: 110vh;
+}
+
+.text-content {
+  width: 50vw;
+  font-size: 1.125rem;
+}
+
+.saas-intro-title {
+  text-align: center;
+}
+
+.saas-intro-content {
+  text-align: left;
+}
+
+.saas-intro-col {
+  h3 {
+    font-size: 2rem;
+  }
+  &:nth-child(n+1) {
+    margin-left: 10px;
+  }
+}
+
+.saas-intro-btn {
+  border-radius: 0;
+  border: 0;
+  padding: 20px 30px;
+  background-color: $color-primary;
+  font-size: 1.2rem;
+}
+
+.saas-intro-space {
+  height: $space-1;
+}
+
+.saas-intro-space2 {
+  height: $space-2;
+}
+
+.home-col {
+  width: 100vw;
+}
+
+.get-start-block {
+  height: 80vh;
+  width: 100vw;
+  background-color: #333333;
+  color: white;
+  .col-6 {
+    .image {
+      object-fit: cover;
+      height: 80vh;
+    }
+    .button {
+      border: 2px solid white;
+      width: fit-content;
+      padding: 15px 25px;
+      border-radius: 0;
+    }
+  }
+  .row {
+    .no1 {
+      padding: 0 $space-1;
+      text-align: left;
+    }
+  }
+}
