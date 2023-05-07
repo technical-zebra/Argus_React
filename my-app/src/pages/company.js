@@ -5,7 +5,7 @@ import member2 from "../Images/member2.png";
 import member3 from "../Images/member3.png";
 import member4 from "../Images/member4.png";
 import coverImage from "../Images/company_cover.jpg";
-import "./company.css";
+import "./company.scss";
 import { useNavigate } from 'react-router-dom';
 
 /**

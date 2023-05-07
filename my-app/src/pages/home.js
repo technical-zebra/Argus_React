@@ -1,4 +1,4 @@
-import "./home.css";
+import "./home.scss";
 import Gallery from "../components/gallery";
 import home1 from "../Images/home1.jpg";
 import home2 from "../Images/home2.jpg";

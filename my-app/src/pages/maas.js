@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import "./maas.css";
+import "./maas.scss";
 import coverImage from "../Images/flying drone.jpg";
 import comparsion from "../Images/comparsion.png";
 import drone from "../Images/drone on hand.jpg"
