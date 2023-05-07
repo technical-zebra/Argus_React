@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/argus-react/static/css/main.434a1c9f.css",
+    "main.css": "/argus-react/static/css/main.b51d445e.css",
     "main.js": "/argus-react/static/js/main.784112d9.js",
     "static/js/787.28cb0dcd.chunk.js": "/argus-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/home4.png": "/argus-react/static/media/home4.73cb235fdf34a4915656.png",
@@ -48,12 +48,12 @@
     "static/media/member1.png": "/argus-react/static/media/member1.7aec2e4ca822863df527.png",
     "static/media/member4.png": "/argus-react/static/media/member4.f092318bcbb3d285733f.png",
     "index.html": "/argus-react/index.html",
-    "main.434a1c9f.css.map": "/argus-react/static/css/main.434a1c9f.css.map",
+    "main.b51d445e.css.map": "/argus-react/static/css/main.b51d445e.css.map",
     "main.784112d9.js.map": "/argus-react/static/js/main.784112d9.js.map",
     "787.28cb0dcd.chunk.js.map": "/argus-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.434a1c9f.css",
+    "static/css/main.b51d445e.css",
     "static/js/main.784112d9.js"
   ]
 }
