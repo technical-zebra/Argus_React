@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./gallery.css";
+import "./gallery.scss";
 
 /**
  * The Gallery function takes three parameters: title, images, and bgcolor. It returns a div with the

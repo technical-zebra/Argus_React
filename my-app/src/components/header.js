@@ -1,5 +1,5 @@
 import logo from "../Images/logo.png";
-import "./style.css";
+import "./style.scss";
 import { Link } from "react-router-dom";
 
 /**
@@ -10,42 +10,48 @@ import { Link } from "react-router-dom";
 function ArgusHeader() {
   return (
     <header>
-      <br></br>
-      <div className="d-flex justify-content-between align-items-center">
-        <div className="header-logo-block">
-          <Link to="/argus-react">
-            <img className="logo" src={logo} alt="argus logo" />
-          </Link>
-        </div>
-
-        <nav className="header-nav-block">
-          <ul className="d-flex flex-row mp-1 nav-ul">
-            <li>
-              <Link to="/argus-react">
-                <span className="header-link">Home</span>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link to="/argus-react" className="navbar-brand">
+          <img className="logo" src={logo} alt="argus logo" />
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/argus-react" className="nav-link">
+                Home
               </Link>
             </li>
-            <li>
-              <Link to="/models">
-                <span className="header-link">Models</span>
+            <li className="nav-item">
+              <Link to="/models" className="nav-link">
+                Models
               </Link>
             </li>
-            <li>
-              <Link to="/maas">
-                <span className="header-link">Modelling as a Service</span>
+            <li className="nav-item">
+              <Link to="/maas" className="nav-link">
+                Modelling as a Service
               </Link>
             </li>
-            <li>
-              <Link to="/company">
-                <span className="header-link">Company</span>
+            <li className="nav-item">
+              <Link to="/company" className="nav-link">
+                Company
               </Link>
             </li>
           </ul>
-        </nav>
-      </div>
-      <br></br>
+        </div>
+      </nav>
     </header>
   );
-}
+};
 
 export default ArgusHeader;

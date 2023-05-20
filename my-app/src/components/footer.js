@@ -1,7 +1,7 @@
 import Instagram from "../Images/instagram.png";
 import Twitter from "../Images/twitter.png";
 import Youtube from "../Images/youtube.png";
-import "./style.css";
+import "./style.scss";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -12,63 +12,59 @@ import { useNavigate } from "react-router-dom";
 function ArgusFooter() {
   return (
     <footer className="footer-block">
-      <div style={{ height: "3em" }}></div>
+      <div className="d-flex flex-column align-items-center footer-space"></div>
       <div className="row footer-links">
-        <div className="col footer-col">
-          <br></br>
-          <b>
-            <Link to="/models">
-              <span className="footer-link">Model</span>
-            </Link>
-          </b>
-          <div style={{ height: "3em" }}></div>
-          <div className="footer-link">
-          <Link to="/models">
-            <p>Characters</p>
-            <p>Items</p>
-            <p>Environment</p>
-            <p>Architectural Visualization</p>
-            </Link>
+        <div className="col-md-4 col-lg-4">
+          <div className="footer-col">
+            <b>
+              <Link to="/models" className="footer-link">
+                Model
+              </Link>
+            </b>
+            <div className="footer-link footer-pad">
+              <Link to="/models">
+                <p>Characters</p>
+                <p>Items</p>
+                <p>Environment</p>
+                <p>Architectural Visualization</p>
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="col footer-col">
-          <br></br>
-          <b>
-            <Link to="/maas">
-              <span className="footer-link">Modelling as a Service</span>
-            </Link>
-          </b>
-          <div style={{ height: "3em" }}></div>
-          <div className="footer-link">
-          <Link to="/maas">
-            <p>What is MaaS?</p>
-
-            <p>Testimonials</p>
-
-            <p>Service & Support</p>
-            </Link>
+        <div className="col-md-4 col-lg-4">
+          <div className="footer-col">
+            <b>
+              <Link to="/maas" className="footer-link">
+                Modelling as a Service
+              </Link>
+            </b>
+            <div className="footer-link footer-pad">
+              <Link to="/maas">
+                <p>What is MaaS?</p>
+                <p>Testimonials</p>
+                <p>Service & Support</p>
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="col footer-col">
-          <br></br>
-          <b>
-            <Link to="/company">
-              <span className="footer-link">Company</span>
-            </Link>
-          </b>
-          <div style={{ height: "3em" }}></div>
-          <div className="footer-link">
-          <Link to="/company">
-            <p>Who are we?</p>
-
-            <p>Our team</p>
-
-            <p>News</p>
-            </Link>
+        <div className="col-md-4 col-lg-4">
+          <div className="footer-col">
+            <b>
+              <Link to="/company" className="footer-link">
+                Company
+              </Link>
+            </b>
+            <div className="footer-link footer-pad">
+              <Link to="/company">
+                <p>Who are we?</p>
+                <p>Our team</p>
+                <p>News</p>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-      <div className="d-flex flex-row">
+      <div className="d-flex justify-content-left">
         <div>
           <Link to="https://www.instagram.com/">
             <img
@@ -99,13 +95,13 @@ function ArgusFooter() {
       </div>
       <div className="row last-line">
         <div className="col">
-          <Link to="/privacy_policy">
-            <span className="footer-link">Privacy Policy</span>
+          <Link to="/privacy_policy" className="footer-link">
+            Privacy Policy
           </Link>
         </div>
-        <div className="col">© 2023 Argus All rights reserved</div>
+        <div className="col text-right">© 2023 Argus All rights reserved</div>
       </div>
-      <div style={{ height: "3em" }}></div>
+      <div className="d-flex flex-column align-items-center footer-space"></div>
     </footer>
   );
 }

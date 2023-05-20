@@ -5,7 +5,7 @@ import home2 from "../Images/home2.jpg";
 import home3 from "../Images/home3.png";
 import home4 from "../Images/home4.png";
 import homeDrone from "../Images/home_drone.jpg";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 /**
  * It returns an iframe element with a className, src, title, frameBorder, allow, and allowFullScreen
@@ -37,14 +37,14 @@ function MaaSIntro() {
         <div className="saas-intro-space2"></div>
         <div className="saas-intro-title">
           <br></br>
-          <h1>
+          <h1 className="text-anime">
             <b>Start your intelligent modelling now!</b>
           </h1>
           <br></br>
         </div>
         <div className="saas-intro-space2"></div>
         <div className="row saas-intro-content">
-          <div className="col saas-intro-col">
+          <div className="col col-md-4 col-lg-4">
             <h3>Modelling for flexible needs</h3>
             <br></br>
             <p>
@@ -52,7 +52,7 @@ function MaaSIntro() {
               that specify by customers
             </p>
           </div>
-          <div className="col saas-intro-col">
+          <div className="col col-md-4 col-lg-4">
             <h3>Cost reduction</h3>
             <br></br>
             <p>
@@ -60,7 +60,7 @@ function MaaSIntro() {
               purchase models
             </p>
           </div>
-          <div className="col saas-intro-col">
+          <div className="col col-md-4 col-lg-4">
             <h3>High resolution and realistic shape</h3>
             <br></br>
             <p>
@@ -71,7 +71,11 @@ function MaaSIntro() {
         </div>
         <div className="saas-intro-title">
           <br></br>
-          <button className="btn btn-primary saas-intro-btn" type="button" onClick={() => navigate("/maas")}>
+          <button
+            className="btn btn-primary saas-intro-btn"
+            type="button"
+            onClick={() => navigate("/maas")}
+          >
             <b>Explore Modelling as a Service</b>
           </button>
           <div className="saas-intro-space"></div>
@@ -93,15 +97,29 @@ function GetStart() {
 
   return (
     <div className="get-start-block">
-      <div className="row h-100">
-        <div className="col-6 d-flex justify-content-center h-100 flex-column no1">
-          <h2>Bring Realistic and detailed model to your business</h2>
-          <br></br>
-          <button className="btn btn-outline-light button" type="button" onClick={() => navigate("/contact")}>
-            Get started -&gt;
-          </button>
+      <div className="row align-items-center">
+        <div className="col-lg-6 d-flex justify-content-center no1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Bring Realistic and detailed model to your business</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button
+                  className="btn btn-outline-light button rounded-0 px-4 py-3"
+                  type="button"
+                  onClick={() => navigate("/contact")}
+                >
+                  Get started -&gt;
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-6 d-flex justify-content-center h-100 flex-column no2">
+
+        <div className="col-lg-6 d-flex flex-column no2">
           <img
             className="image"
             src={homeDrone}

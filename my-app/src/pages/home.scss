@@ -1,10 +1,11 @@
 $color-primary: #536ee5;
 $space-1: 80px;
 $space-2: 60px;
+$aspect-ratio: 16 / 9;
 
 .cover-video {
-  width: 100vw;
-  height: 110vh;
+  width: 100%;
+  height: calc(100vw / #{$aspect-ratio});
 }
 
 .text-content {
@@ -50,7 +51,6 @@ $space-2: 60px;
 }
 
 .get-start-block {
-  height: 80vh;
   width: 100vw;
   background-color: #333333;
   color: white;
@@ -70,6 +70,75 @@ $space-2: 60px;
     .no1 {
       padding: 0 $space-1;
       text-align: left;
+      .container{
+        padding: 100px 50px ;
+      }
+      
     }
+  }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+
+
+  .text-content {
+    width: 80vw;
+  }
+
+  .saas-intro-col {
+    &:nth-child(n+1) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .saas-intro-btn {
+    font-size: 1rem;
+  }
+
+  .saas-intro-space {
+    height: $space-2;
+  }
+
+  .saas-intro-space2 {
+    height: $space-1;
+  }
+
+  .home-col {
+    width: 100%;
+  }
+
+  .get-start-block {
+    height: auto;
+    .col-6 {
+      .image {
+        height: 50vh;
+      }
+      .button {
+        font-size: 0.8rem;
+      }
+    }
+    .row {
+      .no1 {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.slide-in {
+  animation: slide-in 1s forwards;
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }

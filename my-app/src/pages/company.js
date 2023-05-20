@@ -6,7 +6,7 @@ import member3 from "../Images/member3.png";
 import member4 from "../Images/member4.png";
 import coverImage from "../Images/company_cover.jpg";
 import "./company.scss";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 /**
  * Generate a cover image block that contain a images and a customized text block
@@ -34,7 +34,7 @@ function WhoAreWe() {
       <div className="d-flex justify-content-center flex-column">
         <div style={{ height: "50px" }}></div>
         <h1>Who are we?</h1>
-        <div style={{ height: "50px" }}></div>
+        <div className="gap"></div>
         <p>
           Argus is an innovative company that uses intelligent and automative
           drone modelling system to create a new era for the file, show,
@@ -75,18 +75,20 @@ function OurTeam() {
       <div style={{ height: "50px" }}></div>
       <h1>Our Team</h1>
       <div className="box">
-        <div className="box-in-box" style={{ width: "70%" }}>
           {members.names.map((item, index) => (
-            <div className="d-flex justify-content-center flex-column" key={item}>
+            <div
+              className="d-flex justify-content-center flex-column"
+              key={item}
+            >
               <div className="row member">
-                <div className="col-md-auto img-block">
+                <div className="col-sm-auto col-md-auto col-lg-auto img-block">
                   <img
                     className="member-img"
                     src={members.images[index]}
                     alt="image of the member"
                   ></img>
                 </div>
-                <div className="col-md-9">
+                <div className="col-sm-12 col-md-9 col-lg-9">
                   <br></br>
                   <h3 className="member-name">{item}</h3>
                   <br></br>
@@ -100,7 +102,6 @@ function OurTeam() {
           ))}
         </div>
         <div style={{ height: "50px" }}></div>
-      </div>
     </div>
   );
 }
@@ -112,29 +113,24 @@ function OurTeam() {
 function News() {
   return (
     <div className="news row">
-      <div className="col-md-2"></div>
-      <div className="col-md-8">
+      <div className="col-2 col-md-2"></div>
+      <div className="col-12 col-md-8">
         <div style={{ height: "50px" }}></div>
         <h2>News</h2>
         <br></br>
-        <img
-          src={discount}
-          alt="discount cards"
-          style={{ width: "100%" }}
-        ></img>
+        <img src={discount} alt="discount cards" className="img-fluid"></img>
         <br></br>
         <p>20% off discount for all models </p>
         <p>
-          To celebrate the open up of the company we provide 20% off discount to
-          all models until end of July, 2022
+          To celebrate the opening of the company, we provide a 20% off discount
+          on all models until the end of July 2022.
         </p>
-        <p>publish by Ke Zhang</p>
-        <p className="u-l">read more</p>
+        <p>Published by Ke Zhang</p>
+        <p className="u-l">Read more</p>
         <br></br>
         <div style={{ height: "50px" }}></div>
       </div>
-
-      <div className="col-md-2"></div>
+      <div className="col-2 col-md-2"></div>
     </div>
   );
 }
@@ -144,15 +140,29 @@ function ContactUs() {
 
   return (
     <div className="contact-us-block">
-      <div className="row h-100">
-        <div className="col-6 d-flex justify-content-center h-100 flex-column no1">
-          <h2>Enable a new era of your business</h2>
-          <br></br>
-          <button className="btn btn-outline-light button" type="button" onClick={() => navigate("/contact")}>
-            Contact us -&gt;
-          </button>
+      <div className="row align-items-center">
+        <div className="col-lg-6 d-flex justify-content-center no1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Bring Realistic and detailed model to your business</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button
+                  className="btn btn-outline-light button rounded-0 px-4 py-3"
+                  type="button"
+                  onClick={() => navigate("/contact")}
+                >
+                  Get started -&gt;
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-6 d-flex justify-content-center h-100 flex-column">
+
+        <div className="col-lg-6 d-flex flex-column no2">
           <img className="image" src={drone} alt="A man flying a drone"></img>
         </div>
       </div>

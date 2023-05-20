@@ -1,11 +1,11 @@
-$cover-image-height: 90vh;
+$aspect-ratio: 16 / 9;
 
 .cover-image-container {
   position: relative;
 
   .cover-image {
     width: 100vw;
-    height: $cover-image-height;
+    height: calc(90vw / #{$aspect-ratio});
     object-fit: cover;
   }
 
@@ -15,7 +15,11 @@ $cover-image-height: 90vh;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 1)
+    );
   }
 
   .cover-image-title {
@@ -28,6 +32,21 @@ $cover-image-height: 90vh;
     font-size: 2rem;
     z-index: 1;
   }
+}
+.saas-intro {
+
+  .saas-col {
+    padding: 20px 20px;
+  }
+}
+
+.comparsion-graph {
+  width: 60%;
+
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+
 }
 
 .testimonial-bgcolor {
@@ -49,6 +68,10 @@ $cover-image-height: 90vh;
   div {
     width: 40%;
     padding: 40px 0;
+
+    @media (max-width: 992px) {
+      width: 98%;
+    }
   }
 
   .comment-text {
@@ -58,6 +81,9 @@ $cover-image-height: 90vh;
   .customer-name {
     text-align: end;
   }
+
+  
+
 }
 
 .spacing-50 {
@@ -65,14 +91,30 @@ $cover-image-height: 90vh;
 }
 
 .left-side {
-  padding: 0 150px;
+  padding: 40px 100px;
   text-align: left;
 
   h1 {
     font-size: 3.5rem;
+
+    @media (max-width: 992px) {
+      font-size: 2rem;
+    }
   }
 
   p {
     font-size: 1.5rem;
+  }
+
+}
+
+.right-side {
+  overflow: hidden;
+  padding: 0px 0px;
+
+  .image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
   }
 }

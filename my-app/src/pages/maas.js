@@ -1,9 +1,9 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import "./maas.scss";
 import coverImage from "../Images/flying drone.jpg";
 import comparsion from "../Images/comparsion.png";
-import drone from "../Images/drone on hand.jpg"
+import drone from "../Images/drone on hand.jpg";
 
 function CoverImage(props) {
   return (
@@ -28,17 +28,17 @@ function Intro() {
           <br></br>
         </div>
         <div className="saas-intro-space2"></div>
-        <div className="row saas-intro-content">
-          <div className="col saas-intro-col">
+        <div className="row">
+          <div className="col-md-4 col-lg-4 saas-col">
             <h4>Pay a fee for each unit successfully modeled</h4>
           </div>
-          <div className="col saas-intro-col">
+          <div className="col-md-4 col-lg-4 saas-col">
             <h4>
               Half the cost of Modelling with AI-powered drone modelling
               technology
             </h4>
           </div>
-          <div className="col saas-intro-col">
+          <div className="col-md-4 col-lg-4 saas-col">
             <h4>Instant savings starting your first customed model</h4>
           </div>
         </div>
@@ -85,17 +85,24 @@ function GetStart() {
 
   return (
     <div className="get-start-block">
-      <div className="row h-100">
-        <div className="col-6 d-flex justify-content-center h-100 flex-column left-side">
+      <div className="row">
+        <div className="col-md-6 col-lg-6 left-side">
           <h1>Discover advantages of Modelling as a Service</h1>
-          <br></br>
-          <p>Contact our team to see how we can help with intelligent automation at your facility.</p>
-          <br></br>
-          <button className="btn btn-outline-light button" type="button" onClick={() => navigate("/contact")}>
+          <br />
+          <p>
+            Contact our team to see how we can help with intelligent automation
+            at your facility.
+          </p>
+          <br />
+          <button
+            className="btn btn-outline-light button rounded-0 px-4 py-3"
+            type="button"
+            onClick={() => navigate("/contact")}
+          >
             <h3>Get started -&gt;</h3>
           </button>
         </div>
-        <div className="col-6 d-flex justify-content-center h-100 flex-column right-side">
+        <div className="col-md-6 col-lg-6 right-side">
           <img className="image" src={drone} alt="A man flying a drone"></img>
         </div>
       </div>
@@ -123,10 +130,9 @@ function MaaS() {
       <div className="row justify-content-center">
         <br></br>
         <div className="d-flex justify-content-center">
-          <img
+          <img className="comparsion-graph"
             src={comparsion}
             alt="maas comparsion"
-            style={{ width: "60%" }}
           ></img>
         </div>
         <div className="spacing-50"></div>
