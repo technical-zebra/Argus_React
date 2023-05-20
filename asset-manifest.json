@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/argus-react/static/css/main.c5a11242.css",
-    "main.js": "/argus-react/static/js/main.de9250c3.js",
+    "main.css": "/argus-react/static/css/main.779a3df9.css",
+    "main.js": "/argus-react/static/js/main.cfbd4c9a.js",
     "static/js/787.28cb0dcd.chunk.js": "/argus-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/home4.png": "/argus-react/static/media/home4.73cb235fdf34a4915656.png",
     "static/media/discount.jpg": "/argus-react/static/media/discount.c2bd7a37d045db4aff88.jpg",
@@ -48,12 +48,12 @@
     "static/media/member1.png": "/argus-react/static/media/member1.7aec2e4ca822863df527.png",
     "static/media/member4.png": "/argus-react/static/media/member4.f092318bcbb3d285733f.png",
     "index.html": "/argus-react/index.html",
-    "main.c5a11242.css.map": "/argus-react/static/css/main.c5a11242.css.map",
-    "main.de9250c3.js.map": "/argus-react/static/js/main.de9250c3.js.map",
+    "main.779a3df9.css.map": "/argus-react/static/css/main.779a3df9.css.map",
+    "main.cfbd4c9a.js.map": "/argus-react/static/js/main.cfbd4c9a.js.map",
     "787.28cb0dcd.chunk.js.map": "/argus-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a11242.css",
-    "static/js/main.de9250c3.js"
+    "static/css/main.779a3df9.css",
+    "static/js/main.cfbd4c9a.js"
   ]
 }
