@@ -5,6 +5,8 @@ import coverImage from "../Images/flying drone.jpg";
 import comparsion from "../Images/comparsion.png";
 import drone from "../Images/drone on hand.jpg";
 
+import AnimatedText from "../components/AnimatedText.js";
+
 function CoverImage(props) {
   return (
     <div className="cover-image-container">
@@ -22,9 +24,12 @@ function Intro() {
         <div className="saas-intro-space2"></div>
         <div className="saas-intro-title">
           <br></br>
-          <h3>
-            <b>What is Modelling as a Service?</b>
-          </h3>
+          <AnimatedText>
+            <h3>
+              <b>What is Modelling as a Service?</b>
+            </h3>
+          </AnimatedText>
+
           <br></br>
         </div>
         <div className="saas-intro-space2"></div>
@@ -53,12 +58,15 @@ function Testimonial() {
     <div className="testimonial-bgcolor d-flex justify-content-center">
       <div className="testimonial-block">
         <br></br>
-        <h2>Hear it from our customers</h2>
-        <br></br>
-        <p>
-          Don’t just take it from us. Listen to what some of our customers are
-          saying about Modelling as a Service with Argus.
-        </p>
+        <AnimatedText>
+          <h2>Hear it from our customers</h2>
+
+          <br></br>
+          <p>
+            Don’t just take it from us. Listen to what some of our customers are
+            saying about Modelling as a Service with Argus.
+          </p>
+        </AnimatedText>
         <div className="customer-comment d-flex justify-content-center">
           <div>
             <p className="comment-text">
@@ -86,22 +94,24 @@ function GetStart() {
   return (
     <div className="get-start-block">
       <div className="row">
-        <div className="col-md-6 col-lg-6 left-side">
-          <h1>Discover advantages of Modelling as a Service</h1>
-          <br />
-          <p>
-            Contact our team to see how we can help with intelligent automation
-            at your facility.
-          </p>
-          <br />
-          <button
-            className="btn btn-outline-light button rounded-0 px-4 py-3"
-            type="button"
-            onClick={() => navigate("/contact")}
-          >
-            <h3>Get started -&gt;</h3>
-          </button>
-        </div>
+          <div className="col-md-6 col-lg-6 left-side">
+          <AnimatedText>
+            <h1>Discover advantages of Modelling as a Service</h1>
+            <br />
+            <p>
+              Contact our team to see how we can help with intelligent
+              automation at your facility.
+            </p>
+            <br />
+            <button
+              className="btn btn-outline-light button rounded-0 px-4 py-3"
+              type="button"
+              onClick={() => navigate("/contact")}
+            >
+              <h3>Get started -&gt;</h3>
+            </button>
+            </AnimatedText>
+          </div>
         <div className="col-md-6 col-lg-6 right-side">
           <img className="image" src={drone} alt="A man flying a drone"></img>
         </div>
@@ -130,7 +140,8 @@ function MaaS() {
       <div className="row justify-content-center">
         <br></br>
         <div className="d-flex justify-content-center">
-          <img className="comparsion-graph"
+          <img
+            className="comparsion-graph"
             src={comparsion}
             alt="maas comparsion"
           ></img>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./gallery.scss";
+import AnimatedText from "../components/AnimatedText.js";
 
 /**
  * The Gallery function takes three parameters: title, images, and bgcolor. It returns a div with the
@@ -106,7 +107,9 @@ function Gallery({ title, images, bgcolor }) {
     <div className="gallery-container" style={containerStyle}>
       <div style={{ height: "30px" }}></div>
       <div className="gallery-title">
+        <AnimatedText>
         <h3>{title}</h3>
+        </AnimatedText>
       </div>
       <div style={{ height: "30px" }}></div>
       <div className="slider-container">

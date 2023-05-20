@@ -7,6 +7,8 @@ import home4 from "../Images/home4.png";
 import homeDrone from "../Images/home_drone.jpg";
 import { useNavigate } from "react-router-dom";
 
+import AnimatedText from "../components/AnimatedText.js";
+
 /**
  * It returns an iframe element with a className, src, title, frameBorder, allow, and allowFullScreen
  * @returns A React component that renders an iframe.
@@ -37,9 +39,11 @@ function MaaSIntro() {
         <div className="saas-intro-space2"></div>
         <div className="saas-intro-title">
           <br></br>
-          <h1 className="text-anime">
-            <b>Start your intelligent modelling now!</b>
-          </h1>
+          <AnimatedText>
+            <h1>
+              <b>Start your intelligent modelling now!</b>
+            </h1>
+          </AnimatedText>
           <br></br>
         </div>
         <div className="saas-intro-space2"></div>
@@ -99,24 +103,27 @@ function GetStart() {
     <div className="get-start-block">
       <div className="row align-items-center">
         <div className="col-lg-6 d-flex justify-content-center no1">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Bring Realistic and detailed model to your business</h2>
+          <AnimatedText>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  
+                    <h2>Bring Realistic and detailed model to your business</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button
+                    className="btn btn-outline-light button rounded-0 px-4 py-3"
+                    type="button"
+                    onClick={() => navigate("/contact")}
+                  >
+                    Get started -&gt;
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <button
-                  className="btn btn-outline-light button rounded-0 px-4 py-3"
-                  type="button"
-                  onClick={() => navigate("/contact")}
-                >
-                  Get started -&gt;
-                </button>
-              </div>
-            </div>
-          </div>
+          </AnimatedText>
         </div>
 
         <div className="col-lg-6 d-flex flex-column no2">

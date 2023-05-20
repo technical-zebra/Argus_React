@@ -37,30 +37,9 @@ function isInViewport(element) {
  * @returns The Router component is being returned.
  */
 function App() {
-  const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    function handleScroll() {
-      if (isInViewport(sectionRef.current)) {
-        setIsVisible(true);
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <Router>
-      <section
-        ref={sectionRef}
-        className={`text-anime ${isVisible ? "slide-in" : ""}`}
-      >
-        </section>
         <ArgusHeader />
         <div className="margin-top">
         <Routes>

@@ -8,6 +8,8 @@ import coverImage from "../Images/company_cover.jpg";
 import "./company.scss";
 import { useNavigate } from "react-router-dom";
 
+import AnimatedText from "../components/AnimatedText.js";
+
 /**
  * Generate a cover image block that contain a images and a customized text block
  * @param props - {
@@ -33,7 +35,9 @@ function WhoAreWe() {
     <div className="WhoAreWe-bgcolor d-flex justify-content-center cover-image-title">
       <div className="d-flex justify-content-center flex-column">
         <div style={{ height: "50px" }}></div>
-        <h1>Who are we?</h1>
+        <AnimatedText>
+          <h1>Who are we?</h1>
+        
         <div className="gap"></div>
         <p>
           Argus is an innovative company that uses intelligent and automative
@@ -43,6 +47,7 @@ function WhoAreWe() {
           quality and interactive 3D models.
         </p>
         <div style={{ height: "50px" }}></div>
+        </AnimatedText>
       </div>
     </div>
   );
@@ -73,35 +78,35 @@ function OurTeam() {
   return (
     <div className="our-team-block">
       <div style={{ height: "50px" }}></div>
-      <h1>Our Team</h1>
+      <AnimatedText>
+        <h1>Our Team</h1>
+      </AnimatedText>
+      <div style={{ height: "50px" }}></div>
       <div className="box">
-          {members.names.map((item, index) => (
-            <div
-              className="d-flex justify-content-center flex-column"
-              key={item}
-            >
-              <div className="row member">
-                <div className="col-sm-auto col-md-auto col-lg-auto img-block">
-                  <img
-                    className="member-img"
-                    src={members.images[index]}
-                    alt="image of the member"
-                  ></img>
-                </div>
-                <div className="col-sm-12 col-md-9 col-lg-9">
-                  <br></br>
-                  <h3 className="member-name">{item}</h3>
-                  <br></br>
-                  <p>{members.roles[index]}</p>
-                  <br></br>
-                  <p>{members.intros[index]}</p>
-                </div>
+        {members.names.map((item, index) => (
+          <div className="d-flex justify-content-center flex-column" key={item}>
+            <div className="row member">
+              <div className="col-sm-auto col-md-auto col-lg-auto img-block">
+                <img
+                  className="member-img"
+                  src={members.images[index]}
+                  alt="the member"
+                ></img>
               </div>
-              <div style={{ height: "30px" }}></div>
+              <div className="col-sm-12 col-md-9 col-lg-9">
+                <br></br>
+                <h3 className="member-name">{item}</h3>
+                <br></br>
+                <p>{members.roles[index]}</p>
+                <br></br>
+                <p>{members.intros[index]}</p>
+              </div>
             </div>
-          ))}
-        </div>
-        <div style={{ height: "50px" }}></div>
+            <div style={{ height: "30px" }}></div>
+          </div>
+        ))}
+      </div>
+      <div style={{ height: "50px" }}></div>
     </div>
   );
 }
@@ -142,24 +147,26 @@ function ContactUs() {
     <div className="contact-us-block">
       <div className="row align-items-center">
         <div className="col-lg-6 d-flex justify-content-center no1">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Bring Realistic and detailed model to your business</h2>
+          <AnimatedText>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>Bring Realistic and detailed model to your business</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button
+                    className="btn btn-outline-light button rounded-0 px-4 py-3"
+                    type="button"
+                    onClick={() => navigate("/contact")}
+                  >
+                    Get started -&gt;
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <button
-                  className="btn btn-outline-light button rounded-0 px-4 py-3"
-                  type="button"
-                  onClick={() => navigate("/contact")}
-                >
-                  Get started -&gt;
-                </button>
-              </div>
-            </div>
-          </div>
+          </AnimatedText>
         </div>
 
         <div className="col-lg-6 d-flex flex-column no2">

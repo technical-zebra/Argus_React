@@ -1,5 +1,6 @@
 import logo from "../Images/logo.png";
 import "./style.scss";
+import { Dropdown } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 /**
@@ -14,17 +15,34 @@ function ArgusHeader() {
         <Link to="/argus-react" className="navbar-brand">
           <img className="logo" src={logo} alt="argus logo" />
         </Link>
-        <button
-          className="navbar-toggler"
+        <Dropdown className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          aria-label="Toggle navigation">
+          <Dropdown.Toggle
+            variant="link"
+            id="navbar-dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item as={Link} to="/argus-react">
+              Home
+            </Dropdown.Item>
+            <Dropdown.Item as={Link} to="/models">
+              Models
+            </Dropdown.Item>
+            <Dropdown.Item as={Link} to="/maas">
+              Modelling as a Service
+            </Dropdown.Item>
+            <Dropdown.Item as={Link} to="/company">
+              Company
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -52,6 +70,6 @@ function ArgusHeader() {
       </nav>
     </header>
   );
-};
+}
 
 export default ArgusHeader;
