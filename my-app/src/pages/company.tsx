@@ -7,28 +7,34 @@ import member4 from "../Images/member4.png";
 import coverImage from "../Images/company_cover.jpg";
 import "./company.scss";
 import { useNavigate } from "react-router-dom";
+import { FC } from "react";
 
-import AnimatedText from "../components/AnimatedText.js";
+import AnimatedText from "../components/AnimatedText";
+import React from "react";
+
+interface CoverImageProps {
+  src: string;
+  alt: string;
+}
 
 /**
- * Generate a cover image block that contain a images and a customized text block
- * @param props - {
+ * Generate a cover image block that contains an image and a customized text block
+ * @param props - CoverImageProps
  * @returns A div with a className of cover-image-container.
  */
-function CoverImage(props) {
+const CoverImage: FC<CoverImageProps> = ({ src, alt }) => {
   return (
     <div className="cover-image-container">
-      <img src={props.src} alt={props.alt} className="cover-image" />
+      <img src={src} alt={alt} className="cover-image" />
       <div className="cover-image-mask"></div>
       <WhoAreWe />
     </div>
   );
-}
+};
 
 /**
  * Generate who are we block
- * @returns A div with a className of "WhoAreWe-bgcolor d-flex justify-content-center
- * cover-image-title"
+ * @returns A div with a className of "WhoAreWe-bgcolor d-flex justify-content-center cover-image-title"
  */
 function WhoAreWe() {
   return (
@@ -37,7 +43,7 @@ function WhoAreWe() {
         <div style={{ height: "50px" }}></div>
         <AnimatedText>
           <h1>Who are we?</h1>
-        
+        </AnimatedText>
         <div className="gap"></div>
         <p>
           Argus is an innovative company that uses intelligent and automative
@@ -47,7 +53,6 @@ function WhoAreWe() {
           quality and interactive 3D models.
         </p>
         <div style={{ height: "50px" }}></div>
-        </AnimatedText>
       </div>
     </div>
   );
@@ -148,14 +153,14 @@ function ContactUs() {
       <div className="row align-items-center">
         <div className="col-lg-6 d-flex justify-content-center no1">
           <AnimatedText>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
                   <h2>Bring Realistic and detailed model to your business</h2>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12">
+              <div className="row">
+                <div className="col-md-12">
                   <button
                     className="btn btn-outline-light button rounded-0 px-4 py-3"
                     type="button"
@@ -177,7 +182,7 @@ function ContactUs() {
   );
 }
 
-function Company() {
+const Company: FC = () => {
   return (
     <div>
       <div className="row justify-content-center">
@@ -202,6 +207,6 @@ function Company() {
       </div>
     </div>
   );
-}
+};
 
 export default Company;

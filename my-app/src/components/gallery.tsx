@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./gallery.scss";
-import AnimatedText from "../components/AnimatedText.js";
+import AnimatedText from "./AnimatedText.js";
 
 /**
  * The Gallery function takes three parameters: title, images, and bgcolor. It returns a div with the

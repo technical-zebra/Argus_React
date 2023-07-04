@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "dist"
+  },
+  "include": ["src", "custom.d.ts"]
+}

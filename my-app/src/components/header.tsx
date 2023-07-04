@@ -1,3 +1,4 @@
+import React from "react";
 import logo from "../Images/logo.png";
 import "./style.scss";
 import { Dropdown } from 'react-bootstrap';
@@ -16,7 +17,7 @@ function ArgusHeader() {
           <img className="logo" src={logo} alt="argus logo" />
         </Link>
         <Dropdown className="navbar-toggler"
-          type="button"
+          as="div"
           aria-expanded="false"
           aria-label="Toggle navigation">
           <Dropdown.Toggle

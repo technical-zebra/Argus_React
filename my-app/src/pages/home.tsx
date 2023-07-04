@@ -1,4 +1,5 @@
 import "./home.scss";
+import React from "react";
 import Gallery from "../components/gallery";
 import home1 from "../Images/home1.jpg";
 import home2 from "../Images/home2.jpg";
@@ -104,15 +105,15 @@ function GetStart() {
       <div className="row align-items-center">
         <div className="col-lg-6 d-flex justify-content-center no1">
           <AnimatedText>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
                   
                     <h2>Bring Realistic and detailed model to your business</h2>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12">
+              <div className="row">
+                <div className="col-md-12">
                   <button
                     className="btn btn-outline-light button rounded-0 px-4 py-3"
                     type="button"
@@ -159,8 +160,7 @@ function Homepage() {
         <div className="d-flex justify-content-center home-col">
           <Gallery
             title="Characters / Items / Environment / Architectural Visualization"
-            images={[home1, home2, home3, home4]}
-          />
+            images={[home1, home2, home3, home4]} bgcolor={undefined}          />
         </div>
       </div>
       <div className="row justify-content-center">

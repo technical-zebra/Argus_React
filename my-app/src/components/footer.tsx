@@ -1,9 +1,11 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Instagram from "../Images/instagram.png";
 import Twitter from "../Images/twitter.png";
 import Youtube from "../Images/youtube.png";
 import "./style.scss";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 
 /**
  * It's a footer that has 3 columns, each with a title and a list of links.

@@ -12,6 +12,7 @@ import Contact from "./pages/contact";
 import PrivacyPolicy from "./pages/privacy_policy";
 import NotFound from "./pages/not_found";
 import "./App.css";
+import React from "react";
 
 /**
  * The function checks if an element is currently in the viewport of the user's browser.
@@ -37,13 +38,12 @@ function isInViewport(element) {
  * @returns The Router component is being returned.
  */
 function App() {
-
   return (
     <Router>
-        <ArgusHeader />
-        <div className="margin-top">
+      <ArgusHeader />
+      <div className="margin-top">
         <Routes>
-          <Route exact path="/argus-react" element={<Homepage />} />
+          <Route path="/argus-react" element={<Homepage />} />
           <Route path="/models" element={<Models />} />
           <Route path="/maas" element={<MaaS />} />
           <Route path="/company" element={<Company />} />
@@ -51,9 +51,8 @@ function App() {
           <Route path="/privacy_policy" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        </div>
-        <ArgusFooter />
-      
+      </div>
+      <ArgusFooter />
     </Router>
   );
 }

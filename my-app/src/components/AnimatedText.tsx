@@ -2,8 +2,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./AnimatedText.css";
 
-const AnimatedText = ({ children }) => {
-  const textRef = useRef(null);
+interface AnimatedTextProps {
+  children: React.ReactNode
+}
+
+const AnimatedText:React.FC<AnimatedTextProps> = ({ children }) => {
+  const textRef = useRef<HTMLDivElement>(null);
   const [hasRender, setRender] = useState(false);
 
   useEffect(() => {
@@ -34,7 +38,7 @@ const AnimatedText = ({ children }) => {
       };
       
     }
-  }, []);
+  }, [hasRender]);
 
   return (
     <div ref={textRef} className="animated-text">
